@@ -1,0 +1,117 @@
+{
+    "git.enableSmartCommit": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "html.format.wrapLineLength": 0,
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "liveshare.presence": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "livePugCompiler.savePath": "/",
+    "workbench.statusBar.visible": true,
+    "editor.fontLigatures": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "tailwindCSS.emmetCompletions": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.tabSize": 2,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorTheme": "GitHub Dark",
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "editor.suggest.insertMode": "replace",
+    // "php-cs-fixer.config": "/home/kode/.vscode/php-cs-fixer.php",
+    "editor.formatOnSave": true,
+    "gitlens.mode.active": "zen",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    // "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    // "php-cs-fixer.lastDownload": 1628145691340,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false,
+        "typescriptreact": true
+    },
+    // "workbench.sideBar.location": "right",
+    "workbench.editor.enablePreview": false,
+    "git.confirmSync": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.format.enable": true,
+    "prettier.printWidth": 220,
+    "prettier.semi": false,
+    "prettier.jsxSingleQuote": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    // "editor.lineHeight": 2,
+    "editor.minimap.enabled": false,
+    "update.mode": "none",
+    "screencastMode.onlyKeyboardShortcuts": true,
+    "settingsSync.ignoredSettings": [
+        "update.mode"
+    ],
+    // Causes the debug view to automatically appear when a breakpoint is hit. This
+    // setting is global and not configurable per-language.
+    "debug.openDebug": "openOnDebugBreak",
+    "[dart]": {
+        // Automatically format code on save and during typing of certain characters
+        // (like `;` and `}`).
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+        "editor.rulers": [
+            80
+        ],
+        // Disables built-in highlighting of words that match your selection. Without
+        // this, all instances of the selected text will be highlighted, interfering
+        // with Dart's ability to highlight only exact references to the selected variable.
+        "editor.selectionHighlight": false,
+        // By default, VS Code prevents code completion from popping open when in
+        // "snippet mode" (editing placeholders in inserted code). Setting this option
+        // to `false` stops that and allows completion to open as normal, as if you
+        // weren't in a snippet placeholder.
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // By default, VS Code will pre-select the most recently used item from code
+        // completion. This is usually not the most relevant item.
+        //
+        // "first" will always select top item
+        // "recentlyUsedByPrefix" will filter the recently used items based on the
+        //     text immediately preceding where completion was invoked.
+        "editor.suggestSelection": "first",
+        // Allows pressing <TAB> to complete snippets such as `for` even when the
+        // completion list is not visible.
+        "editor.tabCompletion": "onlySnippets",
+        // By default, VS Code will populate code completion with words found in the
+        // current file when a language service does not provide its own completions.
+        // This results in code completion suggesting words when editing comments and
+        // strings. This setting will prevent that.
+        "editor.wordBasedSuggestions": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar"
+}
