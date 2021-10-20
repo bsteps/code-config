@@ -3,7 +3,10 @@
   "context": "..",
   "dockerFile": "./Dockerfile",
   "remoteUser": "developer",
-  "mounts": ["source=/dev/bus/usb,target=/dev/bus/usb,type=bind"],
+  "mounts": [
+    "source=/dev/bus/usb,target=/dev/bus/usb,type=bind",
+    "source=flutter_docker-bashhistory,target=/commandhistory,type=volume"
+  ],
   "settings": {
     "terminal.integrated.shell.linux": null
   },
@@ -14,7 +17,9 @@
 	"luanpotter.dart-import",
 	"felixangelov.bloc",
 	"jeroen-meijer.pubspec-assist",
-	"mutantdino.resourcemonitor"
+	"mutantdino.resourcemonitor",
+	"localizely.flutter-intl",
+	"njzy.stats-bar"
 ],
   "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/developer/workspace,type=bind,consistency=delegated",
   "workspaceFolder": "/home/developer/workspace"

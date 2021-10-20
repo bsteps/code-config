@@ -21,6 +21,9 @@ RUN cd Android/sdk/tools/bin && yes | ./sdkmanager --licenses
 RUN cd Android/sdk/tools/bin && ./sdkmanager "build-tools;29.0.2" "patcher;v4" "platform-tools" "platforms;android-29" "sources;android-29"
 ENV PATH "$PATH:/home/developer/Android/sdk/platform-tools"
 
+# Install some required package for v2.5.0
+RUN cd Android/sdk/tools/bin && ./sdkmanager --install "cmdline-tools;latest"
+
 # Download Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git
 ENV PATH "$PATH:/home/developer/flutter/bin"
@@ -34,3 +37,16 @@ RUN flutter doctor
 RUN dart pub global activate fvm
 ENV PATH "$PATH:/home/developer/.pub-cache/bin"
 RUN fvm install 1.22.6
+
+# Maintain bash history
+ARG USERNAME=developer
+
+USER root
+
+RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
+    && mkdir /commandhistory \
+    && touch /commandhistory/.bash_history \
+    && chown -R $USERNAME /commandhistory \
+    && echo $SNIPPET >> "/home/$USERNAME/.bashrc"
+    
+USER developer
