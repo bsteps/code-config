@@ -10,7 +10,12 @@
   "settings": {
     "terminal.integrated.shell.linux": null
   },
-  "runArgs": ["--privileged"],
+  "runArgs": [
+    "--privileged",
+    // add only if you want to use the host's network for emulators will provide feature in future
+    // "--add-host=host.docker.internal:host-gateway",
+    // "--network=host",
+  ],
   "extensions": [
 	"dart-code.flutter",
 	"bendixma.dart-data-class-generator",
